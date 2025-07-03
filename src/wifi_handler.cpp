@@ -33,7 +33,7 @@ void setupWiFi()
 {
     WiFiManager wifiManager;
     wifiManager.setTimeout(180);
-    if (!wifiManager.autoConnect("ESP32_Chat_AP"))
+    if (!wifiManager.autoConnect("BLETalk_ESP32"))
     {
         Serial.println("Failed to connect to WiFi, restarting...");
         ESP.restart();
